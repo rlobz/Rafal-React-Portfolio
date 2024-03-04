@@ -3,7 +3,7 @@ import Navigation from '../Navigation/Navigation';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <Navigation />
     </header>
   );
