@@ -1,0 +1,13 @@
+:root {
+    --color-bg: #ffffff;
+    --color-bg-variant: #44b5e2;
+    --color-primary-variant:rgba(77, 181, 255, 0.4);
+
+
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}

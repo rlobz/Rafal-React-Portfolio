@@ -8,7 +8,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: grey;
+  background-color: rgb(31, 50, 219);
 
 }
 
