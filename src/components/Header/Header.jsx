@@ -1,18 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Navigation from '../Navigation/Navigation';
 
 function Header() {
   return (
     <header>
-      <h1>Rafal's Portfolio</h1>
-      <nav>
-        <ul>
-          <li><Link to="/">About Me</Link></li>
-          <li><Link to="/portfolio">Portfolio</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-        </ul>
-      </nav>
+      <Navigation />
     </header>
   );
 }
