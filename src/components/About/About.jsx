@@ -1,7 +1,7 @@
 import React from 'react';
 import Selfie from '../../assets/Rafal.jpg';
 import { Row, Col } from 'react-bootstrap';
-import './About.css'; // Ensure you have an About.css file for custom styling
+import './about.css';
 
 function About() {
   return (
