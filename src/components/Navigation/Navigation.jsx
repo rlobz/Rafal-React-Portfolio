@@ -1,32 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
-      <h1 className="navbar-brand">Rafal's Portfolio</h1>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">About</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/portfolio">Portfolio</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/resume">Resume</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar collapseOnSelect expand="lg" className="justify-content-between">
+      <Container fluid>
+        <LinkContainer to="/">
+          <Navbar.Brand className="pe-lg-5">Rafal's Portfolio</Navbar.Brand>
+        </LinkContainer>
+        
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto pe-lg-5">
+            <LinkContainer to="/">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/portfolio">
+              <Nav.Link>Portfolio</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/resume">
+              <Nav.Link>Resume</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

@@ -2,7 +2,7 @@
 
 This project is a single-page application (SPA) portfolio developed using React. It showcases my web development projects, skills, and professional information. Designed with a mobile-first approach and deployed on Netlify, this portfolio represents my expertise in building single-page applications with React.
 
-![screenshot of portfolio](./assets/)
+![screenshot of portfolio](/src/assets/portfolio.png)
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ This project is a single-page application (SPA) portfolio developed using React.
 
 ## Deployment
 
-This application is deployed on Netlify. You can view the live application at [Link to web app](https://)
+This application is deployed on Netlify. You can view the live application at [Link to web app](https://rafallobzowski.netlify.app/)
 
 ## Installation
 

@@ -9,16 +9,14 @@ html, body {
   flex-direction: column;
   min-height: 100vh;
   background-color: rgb(31, 50, 219);
-
 }
 
 .main-content {
   flex: 1;
 }
 
-
 .header {
-  background-image: url('/src/assets/banner.jpg'); /* Adjust the path as needed */
+  background-image: url('/src/assets/banner.jpg');
   background-size: cover;
   background-position: center;
   height: 150px;
@@ -27,22 +25,56 @@ html, body {
   justify-content: center;
 }
 
+/* Navbar Customizations */
 .navbar {
   width: 100%;
-  background-color: transparent;
+  background-color: transparent !important; 
 }
+
+.navbar-brand {
+  color: white !important; 
+  font-size: 40px !important; 
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); 
+  display: flex;
+}
+.navbar-brand {
+   text-align: left;
+}
+
 
 .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-family: 'Your Font Family', sans-serif;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-  
-}
-
-.navbar h1 {
-  color: white;
-  font-size: 40px;
+  color: rgb(255, 255, 255); 
+  font-size: 40px; 
+  font-family: 'Your Font Family', sans-serif; 
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+.navbar-toggler.collapsed {
+  border-color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Adjust the font size to suit your needs */
+    padding: 10px; /* Adjust padding for better touch accessibility */
+  }
+
+
+  .navbar-nav .nav-link {
+    font-size: 20px; /* Smaller font size for nav links on small devices */
+    padding: 10px; /* Padding for nav links on small devices */
+  }
+
+  .navbar-brand {
+    font-size: 24px; /* Smaller font size for the brand on small devices */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
