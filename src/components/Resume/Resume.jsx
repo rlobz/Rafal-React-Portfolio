@@ -55,7 +55,7 @@ function Resume() {
         target="_blank"
         className="resume-button mb-4"
       >
-        Check My Resume
+        Check My CV
       </Button>
 
       <h3>My Experience:</h3>

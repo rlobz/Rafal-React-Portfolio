@@ -1,0 +1,56 @@
+#about-me {
+    padding: 20px; 
+  }
+  
+  .about-image {
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 4rem; 
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s; 
+  }
+  
+  .about-image:hover {
+    transform: rotate(-2deg);
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  /* Media query for small devices */
+  @media screen and (max-width: 600px) {
+    .about-image {
+      width: 65%;
+      margin-bottom: 3rem;
+    }
+  
+    .about-me-text {
+      text-align: center;
+    }
+  
+    .about-me-text p {
+      margin: 1.5rem 0;
+    }
+  }
+  
+  /* Media query for medium devices */
+  @media screen and (max-width: 1024px) {
+    .about-image {
+      width: 50%;
+      margin-bottom: 4rem;
+    }
+  
+    .about-me-text p {
+      margin: 1rem 0 1.5rem;
+    }
+  }
+  
+  /* For larger devices, we align the image to the right inside its column */
+  @media (min-width: 768px) {
+    .about-image {
+      margin-right: 15%;
+    }
+  }
+  
