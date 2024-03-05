@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
 import { Card, ListGroup, Row, Col, Button } from 'react-bootstrap';
-import './Resume.css';
+import './resume.css';
 
 const skills = {
   frontend: [
