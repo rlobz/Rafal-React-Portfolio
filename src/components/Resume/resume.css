@@ -1,0 +1,83 @@
+  /* Media Queries for mobile phones (SMALL devices)*/
+  @media screen and (max-width: 600px) {
+    .skill-card {
+      gap: 1rem;
+    }
+  
+    .skill-card > div {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+  }
+  
+  /* Media Queries for tablet (MEDIUM devices)*/
+  @media screen and (max-width: 1024px) {
+    .skill-card {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-card {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+
+  .skill-card {
+    width: 500px;
+    margin: 20px auto; 
+    padding: 20px; 
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    transition: background-color 0.3s, opacity 0.3s;
+    background-color: rgb(115, 144, 158);
+  }
+
+  .skill-card:hover, .skill-card:hover .list-group-item:hover {
+    background-color: #add8e6;
+    opacity: 0.8;
+  }
+
+  .skill-card.card {
+    background-color: aqua;
+  }
+
+  .skill-card .list-group-item a {
+    color: black; 
+    text-decoration: none; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+  }
+  
+  .skill-card .list-group-item a:hover {
+    text-decoration: underline; 
+  }
+
+  .card-header {
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  #resume h2, #resume h3 {
+    color: white;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .resume-button {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 20px;
+    padding: 10px 20px;
+  }
+  
+  .resume-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
