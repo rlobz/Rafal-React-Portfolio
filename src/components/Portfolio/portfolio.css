@@ -1,0 +1,31 @@
+.portfolio-carousel .carousel-item img {
+    max-width: 50%; 
+    margin-left: 25%; 
+    margin-top: 50px;
+  }
+  
+  .github-link {
+    display: inline-block;
+    color: #fff; 
+    margin-top: 10px;
+    text-decoration: none; 
+    font-size: 1em;
+  }
+
+.portfolio-carousel .carousel-caption,
+.portfolio-carousel .carousel-caption a.github-link
+.github-link svg {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  color: #ffffff; 
+}
+
+.github-link svg {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 34px;
+    height: 34px;
+  }
+
+.github-link:hover svg {
+    transform: scale(1.5);
+  }
